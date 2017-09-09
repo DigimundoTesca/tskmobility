@@ -1,3 +1,6 @@
+$yellow-hover: rgba(230, 218, 59,.9);
+$yellow: rgba(230,218,59,1);
+
 body {
   background-color: #101010;
   font-size: 18px;
@@ -26,10 +29,11 @@ main {
 }
 
 a {
+  color: $yellow;
   transition: all .3s ease;
   &:hover {
-    color: rgba(3,155,229,.9) !important;
-    box-shadow: 0px 1px 0px 0px rgba(3,155,229,.9);
+    color: $yellow-hover !important;
+    box-shadow: 0px 1px 0px 0px $yellow-hover;
   }
 }
 
@@ -39,8 +43,26 @@ a {
   .subtitle {
     font-style: italic;
   }
-  .section {
-    width: 100%;
+}
+
+.section {
+  background-color: rgba(0,0,0,.5);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 100%;
+  align-self: flex-end;
+  .container {
     align-self: center;
   }
+  &-header {
+    font-size: 5rem;
+    font-weight: bold;
+  }
+  &-subtitle {
+    font-size: 3rem;
+  }
+  &-content {
+    font-size: 1.5rem;
+  }
+
 }
