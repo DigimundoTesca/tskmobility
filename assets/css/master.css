@@ -20,6 +20,18 @@ main{
 .black{
 	background:#050505 !important
 }
+.who{
+	text-align: right;
+}
+.mis{
+	
+}
+
+#car{
+	background-color:rgba(0,0,0,0.8);
+	padding: 100px, 0px, 20px, 0px;
+
+}
 .parallax-container{
 	height:calc(100vh - 64px);
 			color:rgba(255,255,255,0.9)
@@ -44,6 +56,7 @@ main{
 #id_name,#id_comment,#id_phone,#id_address{
 	color: white;
 }
+
 
 input[type="button"],
 			input[type="submit"],
@@ -102,4 +115,7 @@ input[type="button"],
 #MuestraTotal{
 	font-size: 6rem;
 	color: white;
+	border: 0; 
+	border-radius: 10px;
+	background: rgba(0,0,0,0.5);
 }
